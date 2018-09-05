@@ -161,8 +161,8 @@ start_pdnsd() {
   local usr_port="$2"
   
 	local tcp_dns_list="208.67.222.222, 208.67.220.220"
-	[ -z "$usr_dns" ] && usr_dns="8.8.8.8"
-	[ -z "$usr_port" ] && usr_port="53"
+	[ -z "$usr_dns" ] && usr_dns="208.67.220.220"
+	[ -z "$usr_port" ] && usr_port="5353"
 	mkdir -p /var/etc /var/pdnsd
 	
   if ! test -f "/var/pdnsd/pdnsd.cache"; then
