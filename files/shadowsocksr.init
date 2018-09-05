@@ -55,7 +55,7 @@ gen_config_file() {
           hostip=`cat /etc/ssr_ip`
           fi
          fi
-         [ $2 = "0" -a  $kcp_flag = "1" ] && hostip="127.0.0.1"
+         [ $kcp_flag = "1" ] && hostip="127.0.0.1"
          
          if [ $2 = "0" ] ;then
          config_file=$CONFIG_FILE
